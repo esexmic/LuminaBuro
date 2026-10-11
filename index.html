@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumina Buró — Ilumina tu luz en la oscuridad</title>
+  <meta name="description" content="Lumina Buró fabrica burós con iluminación LED regulable, efecto 3D y diseño personalizable. Mobiliario iluminado hecho en México." />
+  <meta name="theme-color" content="#12100c" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip" href="#producto">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="#inicio" aria-label="Lumina Buró, inicio">
+        <img src="img/logo-clara.png" alt="Lumina Buró" width="150" height="140" />
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="#objetivo">El descanso</a>
+        <a href="#producto">El buró</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--solid" href="#producto">Conoce el buró</a>
+      </div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="menu-movil" data-menu-panel hidden>
+      <a href="#objetivo">El descanso</a>
+      <a href="#producto">El buró</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--solid" href="#producto">Conoce el buró</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Burós con luz integrada</p>
+          <h1 id="hero-title" class="hero__title">Ilumina tu luz<br />en la oscuridad.</h1>
+          <p class="hero__sub">Un buró que integra iluminación LED regulable, efecto 3D y un interior personalizable para transformar la noche de tu recámara.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#producto">Conoce el buró</a>
+            <a class="btn btn--ghost" href="#nosotros">Nuestra historia</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-reveal data-reveal-delay="120">
+          <div class="led-stage" data-led-stage>
+            <img class="hero__img" src="img/buro.png" alt="Buró Lumina con iluminación LED regulable y cubierta de cristal templado" width="530" height="616" />
+          </div>
+          <p class="hero__caption">Prototipo final &middot; acabado en madera oscura</p>
+        </div>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="objetivo section" id="objetivo" aria-labelledby="objetivo-title">
+      <div class="wrap">
+        <div class="objetivo__lead" data-reveal>
+          <h2 id="objetivo-title" class="display">El descanso no es un lujo.</h2>
+          <p class="lede">Una habitación adaptada para dormir es una necesidad: es donde el cerebro se repara. La temperatura, la iluminación, el orden y la limpieza son algunos de los factores que más intervienen en un descanso adecuado.</p>
+        </div>
+        <ul class="objetivo__list">
+          <li data-reveal>
+            <span class="objetivo__num" aria-hidden="true">01</span>
+            <h3>Luz para antes de dormir</h3>
+            <p>Acompaña las rutinas previas al sueño: leer, escribir o pasar tiempo en el teléfono sin encender la luz de techo.</p>
+          </li>
+          <li data-reveal data-reveal-delay="80">
+            <span class="objetivo__num" aria-hidden="true">02</span>
+            <h3>Un ambiente propio</h3>
+            <p>El diseño interior personalizable convierte un mueble auxiliar en un objeto que habla de quien lo usa.</p>
+          </li>
+          <li data-reveal data-reveal-delay="160">
+            <span class="objetivo__num" aria-hidden="true">03</span>
+            <h3>Descanso más profundo</h3>
+            <p>Planteamos una luz que favorece el tiempo de sueño (TTS), la fase REM y el sueño profundo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="producto section" id="producto" aria-labelledby="producto-title">
+      <div class="wrap producto__grid">
+        <div class="producto__media" data-reveal>
+          <div class="led-stage led-stage--wide" data-led-stage>
+            <img src="img/buro.png" alt="Buró Lumina: estructura de madera, cubierta de cristal y luz LED interior" width="530" height="616" />
+          </div>
+          <div class="led-demo" data-led-demo>
+            <p class="led-demo__label">Pruébalo: elige el tono de luz</p>
+            <div class="led-demo__row" role="group" aria-label="Tono de luz">
+              <button type="button" class="chip is-active" data-led-color="calido" data-led-value="#e6913f">Cálido</button>
+              <button type="button" class="chip" data-led-color="frio" data-led-value="#8fb6cf">Frío</button>
+              <button type="button" class="chip" data-led-color="vivo" data-led-value="#c06bd6">Vivo</button>
+            </div>
+            <div class="led-demo__row" role="group" aria-label="Intensidad">
+              <button type="button" class="chip chip--sm" data-led-level="0.45" data-led-active="0">Baja</button>
+              <button type="button" class="chip chip--sm is-active" data-led-level="0.72" data-led-active="1">Media</button>
+              <button type="button" class="chip chip--sm" data-led-level="1" data-led-active="2">Alta</button>
+            </div>
+          </div>
+        </div>
+        <div class="producto__body">
+          <div class="producto__head" data-reveal>
+            <h2 id="producto-title" class="display">Un buró que también es luz.</h2>
+            <p class="lede">Madera estructurada en cinco recuadros unidos en forma de caja, con cristal templado en la parte superior para ver el interior. Dentro, un forro personalizado, iluminación LED de colores ajustables y un espejo al fondo que crea el efecto 3D.</p>
+          </div>
+          <dl class="specs">
+            <div class="spec" data-reveal>
+              <dt>Dimensiones</dt>
+              <dd class="spec__value">52 &times; 40 &times; 40 cm</dd>
+              <p class="spec__why">Alto, ancho y profundidad pensados para caber junto a la cama sin estorbar.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="60">
+              <dt>Estructura</dt>
+              <dd class="spec__value">5 paneles de madera</dd>
+              <p class="spec__why">Unidos en forma de caja para una pieza sólida y estable.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="120">
+              <dt>Cubierta</dt>
+              <dd class="spec__value">Cristal templado</dd>
+              <p class="spec__why">Deja pasar la luz y permite ver el interior desde arriba.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="60">
+              <dt>Iluminación</dt>
+              <dd class="spec__value">Cálidos, fríos y vivos</dd>
+              <p class="spec__why">Tres familias de color para cambiar el ánimo de la noche.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="120">
+              <dt>Efecto 3D</dt>
+              <dd class="spec__value">Espejo interior</dd>
+              <p class="spec__why">El forro y el espejo del fondo crean sensación de profundidad.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="180">
+              <dt>Control</dt>
+              <dd class="spec__value">Remoto &middot; 3 intensidades</dd>
+              <p class="spec__why">Regula la luz sin levantarte de la cama.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="60">
+              <dt>Alimentación</dt>
+              <dd class="spec__value">Cable de 1.5 m</dd>
+              <p class="spec__why">Conexión directa a la toma de corriente, sin baterías.</p>
+            </div>
+            <div class="spec" data-reveal data-reveal-delay="120">
+              <dt>Interior</dt>
+              <dd class="spec__value">Forro personalizable</dd>
+              <p class="spec__why">Elige el diseño interior que va contigo.</p>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="nosotros section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="wrap">
+        <h2 id="nosotros-title" class="display">Nosotros</h2>
+        <div class="nosotros__grid">
+          <article class="nosotros__block" data-reveal>
+            <h3>Misión</h3>
+            <p>Diseñar y fabricar burós de calidad que transforman la noche, fusionando comodidad con luz e ilusión 3D que convierte un mueble funcional en una experiencia de luz, descanso y diseño.</p>
+          </article>
+          <article class="nosotros__block" data-reveal data-reveal-delay="80">
+            <h3>Visión</h3>
+            <p>Para el 2030, ser una marca mexicana en mobiliario iluminado, posicionada y reconocida en el mercado nacional, expandiendo el catálogo para adaptarnos a distintos establecimientos, áreas del hogar u oficinas.</p>
+          </article>
+          <article class="nosotros__block nosotros__block--values" data-reveal data-reveal-delay="160">
+            <h3>Valores</h3>
+            <ul class="values">
+              <li>Honestidad</li>
+              <li>Responsabilidad</li>
+              <li>Puntualidad</li>
+              <li>Trabajo en equipo</li>
+              <li>Empatía</li>
+              <li>Igualdad</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="diag section" id="diagnostico" aria-labelledby="diag-title">
+      <div class="wrap">
+        <h2 id="diag-title" class="display">Diagnóstico</h2>
+        <p class="lede lede--narrow">Dónde estamos hoy y qué miramos de frente: la lectura interna del proyecto antes de salir al mercado.</p>
+        <div class="diag__grid">
+          <article class="diag__cell diag__cell--fort" data-reveal>
+            <h3>Fortalezas</h3>
+            <ul>
+              <li>Equipo multidisciplinario consolidado.</li>
+              <li>Mobiliario, iluminación y personalización en un mismo producto.</li>
+              <li>Visión clara de crecimiento y expansión de catálogo.</li>
+              <li>Formación en administración, gestión e investigación.</li>
+              <li>Recursos y materiales iniciales disponibles.</li>
+            </ul>
+          </article>
+          <article class="diag__cell diag__cell--opp" data-reveal data-reveal-delay="80">
+            <h3>Oportunidades</h3>
+            <ul>
+              <li>Ampliar el catálogo hacia hogar y oficina.</li>
+              <li>Comercio electrónico y redes sociales.</li>
+              <li>Asesoría y orientación docente.</li>
+              <li>Herramientas disponibles en la institución educativa.</li>
+              <li>Vínculos con proveedores y fabricantes.</li>
+            </ul>
+          </article>
+          <article class="diag__cell diag__cell--weak" data-reveal data-reveal-delay="160">
+            <h3>Debilidades</h3>
+            <ul>
+              <li>Presupuesto inicial limitado para materiales y gastos imprevistos.</li>
+            </ul>
+          </article>
+          <article class="diag__cell diag__cell--threat" data-reveal data-reveal-delay="240">
+            <h3>Amenazas</h3>
+            <ul>
+              <li>Aumento en el costo de materia prima por inflación.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" id="galeria" aria-label="Diseño final del buró">
+      <figure class="galeria__figure">
+        <img src="img/buro.png" alt="Vista final del buró Lumina con su iluminación interior encendida" width="530" height="616" />
+        <figcaption data-reveal>
+          <span class="galeria__tag">Diseño final</span>
+          <p>Acabado en madera oscura, cubierta de cristal templado y luz interior regulable.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-clara.png" alt="Lumina Buró" width="140" height="130" />
+        <p class="footer__legal">Lumina Buró S.A. de C.V.</p>
+        <p class="footer__meta">Giro industrial / manufacturero. Marca con consulta preliminar ante el IMPI (MARCANET).</p>
+        <p class="footer__note">Proyecto en desarrollo: los datos de contacto se publicarán al cerrar la etapa de prototipo.</p>
+      </div>
+      <div class="footer__contact">
+        <h2 id="contacto-title" class="footer__title">Contacto</h2>
+        <div class="pending" data-reveal>
+          <span class="pending__label">Domicilio físico</span>
+          <span class="pending__value">Por definir</span>
+        </div>
+        <div class="pending" data-reveal data-reveal-delay="60">
+          <span class="pending__label">Teléfono</span>
+          <span class="pending__value">Por definir</span>
+        </div>
+        <div class="pending" data-reveal data-reveal-delay="120">
+          <span class="pending__label">Sucursal inicial</span>
+          <span class="pending__value">Por definir</span>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del sitio">
+        <a href="#objetivo">El descanso</a>
+        <a href="#producto">El buró</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#diagnostico">Diagnóstico</a>
+      </nav>
+    </div>
+    <div class="wrap footer__base">
+      <p>&copy; <span data-year>2026</span> Lumina Buró S.A. de C.V. Todos los derechos reservados.</p>
+      <p>Hecho en México.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

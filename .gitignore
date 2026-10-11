@@ -1,0 +1,13 @@
+# Herramientas de agentes (skills, hooks, binarios) — no forman parte del sitio
+.agents/
+.codex/
+skills-lock.json
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporales
+*.tmp
+~$*
