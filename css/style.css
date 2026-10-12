@@ -4,6 +4,39 @@
    Reglas de forma: tarjetas 16px / botones y chips pill / campos 10px.
    ========================================================================== */
 
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/outfit-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/outfit-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/manrope-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../fonts/manrope-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
   --bg: #12100c;
   --bg-2: #17140f;
@@ -12,8 +45,8 @@
   --line: rgba(243, 236, 224, 0.12);
   --line-strong: rgba(243, 236, 224, 0.22);
   --ink: #f3ece0;
-  --muted: #b3a58f;
-  --muted-2: #8a7d69;
+  --muted: #b7ab97;
+  --muted-2: #91846f;
   --accent: #e0a458;
   --accent-deep: #c2823a;
   --led: #e6913f;
@@ -37,7 +70,7 @@
 *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; -webkit-tap-highlight-color: transparent; }
 
 body {
   margin: 0;
@@ -58,6 +91,9 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
 a { color: inherit; text-decoration: none; }
 
 p { margin: 0; }
+
+::selection { background: var(--accent); color: #1a1206; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -251,6 +287,7 @@ p { margin: 0; }
 .nosotros__block h3 { font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-family: var(--font-body); font-weight: 600; margin-bottom: 1.2rem; }
 .nosotros__block p { color: var(--muted); font-size: 1.02rem; }
 .nosotros__block--values { grid-column: 1 / -1; }
+.nosotros__values-intro { color: var(--muted); font-size: 1.02rem; margin-bottom: 1.8rem; max-width: 56ch; }
 .values { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem 2rem; }
 .values li { font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.7rem); font-weight: 300; letter-spacing: -0.01em; border-top: 1px solid var(--line); padding-top: 0.8rem; }
 
