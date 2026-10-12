@@ -93,6 +93,65 @@
     });
   }
 
+  /* ------------------------------------------------- datos de contacto */
+  /* Llena estos datos y todos los links del pie se activan solos:
+     mapa, teléfono (tel:), sucursal y correo (mailto:). */
+  var CONTACTO = {
+    domicilio: "",            /* p. ej. "Av. Reforma 222, Ciudad de México" */
+    mapsQuery: "Lumina Buró, México",  /* se usa mientras no haya domicilio */
+    telefono: "",             /* p. ej. "+52 55 1234 5678" */
+    sucursal: "",             /* p. ej. "Sucursal Polanco, CDMX" */
+    email: ""                 /* p. ej. "hola@luminaburo.mx" */
+  };
+
+  (function wireContact() {
+    var maps = function (q) {
+      return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+    };
+    var data = {
+      maps: function () {
+        return CONTACTO.domicilio
+          ? { href: maps(CONTACTO.domicilio), text: CONTACTO.domicilio, external: true }
+          : { href: maps(CONTACTO.mapsQuery), text: "Ver en el mapa", external: true };
+      },
+      telefono: function () {
+        if (!CONTACTO.telefono) return null;
+        return { href: "tel:" + CONTACTO.telefono.replace(/[^\d+]/g, ""), text: CONTACTO.telefono };
+      },
+      sucursal: function () {
+        if (!CONTACTO.sucursal) return null;
+        return { href: maps(CONTACTO.sucursal), text: CONTACTO.sucursal, external: true };
+      },
+      email: function () {
+        if (!CONTACTO.email) return null;
+        return { href: "mailto:" + CONTACTO.email, text: CONTACTO.email };
+      }
+    };
+
+    document.querySelectorAll("[data-contact]").forEach(function (el) {
+      var kind = el.getAttribute("data-contact");
+      var build = data[kind];
+      if (!build) return;
+      var info = build();
+
+      if (!info) {
+        /* Sin dato todavía: se muestra inactivo, sin link. */
+        el.classList.add("is-disabled");
+        el.removeAttribute("href");
+        return;
+      }
+
+      el.href = info.href;
+      el.querySelector("[data-value]").textContent = info.text;
+      if (info.external) {
+        el.target = "_blank";
+        el.rel = "noopener";
+        el.classList.add("pending--external");
+      }
+      if (kind === "email") el.hidden = false;
+    });
+  })();
+
   /* ---------------------------------------------------------------- año */
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();

@@ -24,7 +24,8 @@
   <header class="nav" data-nav>
     <div class="nav__inner">
       <a class="nav__brand" href="#inicio" aria-label="Lumina Buró, inicio">
-        <img src="img/logo-clara.png" alt="Lumina Buró" width="257" height="218" />
+        <img src="img/mark.png" alt="" width="151" height="149" />
+        <span class="nav__brand-name">Lumina Buró</span>
       </a>
       <nav class="nav__links" aria-label="Secciones">
         <a href="#objetivo">El descanso</a>
@@ -265,26 +266,30 @@
   <footer class="footer" id="contacto" aria-labelledby="contacto-title">
     <div class="wrap footer__grid">
       <div class="footer__brand">
-        <img src="img/logo-clara.png" alt="Lumina Buró" width="257" height="218" />
+        <img src="img/mark.png" alt="" width="151" height="149" />
         <p class="footer__legal">Lumina Buró S.A. de C.V.</p>
         <p class="footer__meta">Giro industrial / manufacturero. Marca con consulta preliminar ante el IMPI (MARCANET).</p>
         <p class="footer__note">Proyecto en desarrollo: los datos de contacto se publicarán al cerrar la etapa de prototipo.</p>
       </div>
-      <div class="footer__contact">
-        <h2 id="contacto-title" class="footer__title">Contacto</h2>
-        <div class="pending" data-reveal>
-          <span class="pending__label">Domicilio físico</span>
-          <span class="pending__value">Por definir</span>
+<div class="footer__contact">
+          <h2 id="contacto-title" class="footer__title">Contacto</h2>
+          <a class="pending" data-contact="maps" data-reveal>
+            <span class="pending__label">Domicilio físico</span>
+            <span class="pending__value" data-value>Ver en el mapa</span>
+          </a>
+          <a class="pending" data-contact="telefono" data-reveal data-reveal-delay="60">
+            <span class="pending__label">Teléfono</span>
+            <span class="pending__value" data-value>Por definir</span>
+          </a>
+          <a class="pending" data-contact="sucursal" data-reveal data-reveal-delay="120">
+            <span class="pending__label">Sucursal inicial</span>
+            <span class="pending__value" data-value>Por definir</span>
+          </a>
+          <a class="pending" data-contact="email" data-reveal data-reveal-delay="180" hidden>
+            <span class="pending__label">Correo</span>
+            <span class="pending__value" data-value>Por definir</span>
+          </a>
         </div>
-        <div class="pending" data-reveal data-reveal-delay="60">
-          <span class="pending__label">Teléfono</span>
-          <span class="pending__value">Por definir</span>
-        </div>
-        <div class="pending" data-reveal data-reveal-delay="120">
-          <span class="pending__label">Sucursal inicial</span>
-          <span class="pending__value">Por definir</span>
-        </div>
-      </div>
       <nav class="footer__nav" aria-label="Enlaces del sitio">
         <a href="#objetivo">El descanso</a>
         <a href="#producto">El buró</a>
