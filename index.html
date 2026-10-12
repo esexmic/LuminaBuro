@@ -6,8 +6,15 @@
   <title>Lumina Buró — Ilumina tu luz en la oscuridad</title>
   <meta name="description" content="Lumina Buró fabrica burós con iluminación LED regulable, efecto 3D y diseño personalizable. Mobiliario iluminado hecho en México." />
   <meta name="theme-color" content="#12100c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lumina Buró" />
+  <meta property="og:title" content="Lumina Buró — Ilumina tu luz en la oscuridad" />
+  <meta property="og:description" content="Burós con iluminación LED regulable, efecto 3D y diseño personalizable. Mobiliario iluminado hecho en México." />
+  <meta property="og:image" content="img/buro.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <script>document.documentElement.classList.add("js");</script>
   <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,7 +24,7 @@
   <header class="nav" data-nav>
     <div class="nav__inner">
       <a class="nav__brand" href="#inicio" aria-label="Lumina Buró, inicio">
-        <img src="img/logo-clara.png" alt="Lumina Buró" width="150" height="140" />
+        <img src="img/logo-clara.png" alt="Lumina Buró" width="257" height="218" />
       </a>
       <nav class="nav__links" aria-label="Secciones">
         <a href="#objetivo">El descanso</a>
@@ -239,14 +246,18 @@
       </div>
     </section>
 
-    <section class="galeria" id="galeria" aria-label="Diseño final del buró">
-      <figure class="galeria__figure">
-        <img src="img/buro.png" alt="Vista final del buró Lumina con su iluminación interior encendida" width="530" height="616" />
-        <figcaption data-reveal>
-          <span class="galeria__tag">Diseño final</span>
-          <p>Acabado en madera oscura, cubierta de cristal templado y luz interior regulable. La superficie de cristal invita a mirar despacio: el espejo interior multiplica la luz y el forro personalizado cuenta tu historia.</p>
-        </figcaption>
-      </figure>
+    <section class="cierre section" aria-labelledby="cierre-title">
+      <div class="wrap cierre__inner">
+        <div data-reveal>
+          <p class="eyebrow">Siguiente paso</p>
+          <h2 id="cierre-title" class="display">Tu noche empieza con la luz correcta.</h2>
+          <p class="lede">Cuéntanos en qué habitación va el primero y armamos la configuración: tono de luz, intensidad y forro interior. Te confirmamos precio y fecha de entrega al cerrar la etapa de prototipo.</p>
+        </div>
+        <div class="cierre__actions" data-reveal data-reveal-delay="80">
+          <a class="btn btn--solid" href="#contacto">Contactar</a>
+          <a class="btn btn--ghost" href="#producto">Ver el buró</a>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -254,7 +265,7 @@
   <footer class="footer" id="contacto" aria-labelledby="contacto-title">
     <div class="wrap footer__grid">
       <div class="footer__brand">
-        <img src="img/logo-clara.png" alt="Lumina Buró" width="140" height="130" />
+        <img src="img/logo-clara.png" alt="Lumina Buró" width="257" height="218" />
         <p class="footer__legal">Lumina Buró S.A. de C.V.</p>
         <p class="footer__meta">Giro industrial / manufacturero. Marca con consulta preliminar ante el IMPI (MARCANET).</p>
         <p class="footer__note">Proyecto en desarrollo: los datos de contacto se publicarán al cerrar la etapa de prototipo.</p>

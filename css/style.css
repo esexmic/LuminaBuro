@@ -70,7 +70,7 @@
 *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; -webkit-tap-highlight-color: transparent; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; -webkit-tap-highlight-color: transparent; scroll-padding-top: 5.5rem; }
 
 body {
   margin: 0;
@@ -304,13 +304,14 @@ p { margin: 0; }
 .diag__cell--weak { background: var(--bg); }
 .diag__cell--threat { background: var(--bg); }
 
-/* --------------------------------------------------------------- galería */
-.galeria { padding-block: 0; }
-.galeria__figure { margin: 0; position: relative; }
-.galeria__figure img { width: 100%; height: clamp(320px, 52vw, 620px); object-fit: contain; padding: clamp(2rem, 6vw, 5rem); background: radial-gradient(80% 70% at 50% 110%, color-mix(in srgb, var(--accent-deep) 22%, transparent), transparent 60%), var(--bg-2); }
-.galeria__figure figcaption { position: absolute; left: var(--gutter); bottom: clamp(1.5rem, 5vw, 3rem); max-width: 34ch; }
-.galeria__tag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 0.6rem; }
-.galeria__figure figcaption p { color: var(--muted); font-size: 0.98rem; }
+/* ---------------------------------------------------------------- cierre */
+.cierre { background: var(--bg-2); }
+.cierre__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: clamp(2rem, 5vw, 4rem); flex-wrap: wrap;
+}
+.cierre .display { max-width: 18ch; }
+.cierre__actions { display: flex; gap: 0.85rem; flex-wrap: wrap; }
 
 /* ---------------------------------------------------------------- footer */
 .footer { border-top: 1px solid var(--line); background: var(--bg); }
@@ -338,21 +339,19 @@ p { margin: 0; }
 /* Física con ratón; en pantallas táctiles no hay hover, así que damos
    retroalimentación al tocar (:active) y una animación que siempre corre. */
 .spec, .diag__cell { transition: transform 0.5s var(--ease), background-color 0.4s var(--ease), border-color 0.4s var(--ease); }
-.galeria__figure img { transition: transform 0.9s var(--ease); }
 .hero__visual img, .producto__media img { transition: transform 0.6s var(--ease); }
 
 @media (hover: hover) and (pointer: fine) {
   .spec:hover { background: var(--surface); }
   .diag__cell:hover { transform: translateY(-4px); border-color: var(--line-strong); }
   .diag__cell--weak:hover, .diag__cell--threat:hover { background: var(--surface); }
-  .galeria__figure:hover img { transform: scale(1.03); }
   .hero__visual:hover img, .producto__media:hover img { transform: translateY(-6px); }
 }
 
 @media (hover: none) {
   .chip:active { transform: scale(0.95); }
   .spec:active, .diag__cell:active { transform: scale(0.99); background: var(--surface); }
-  .galeria__figure:active img, .hero__visual:active img, .producto__media:active img { transform: scale(1.02); }
+  .hero__visual:active img, .producto__media:active img { transform: scale(1.02); }
 }
 
 /* La luz "respira": da vida a la página en móvil sin depender del hover.
@@ -417,6 +416,10 @@ p { margin: 0; }
   .diag__cell--fort { grid-row: auto; }
   .footer__grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer__base { flex-direction: column; gap: 0.4rem; }
+
+  .cierre__inner { flex-direction: column; align-items: flex-start; }
+  .cierre__actions { width: 100%; }
+  .cierre__actions .btn { flex: 1 1 auto; }
 }
 
 @media (max-width: 640px) {
