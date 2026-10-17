@@ -11,6 +11,7 @@
   <meta property="og:title" content="Así se construye — Lumina Buró" />
   <meta property="og:description" content="El armado del buró en seis pasos, con planos, medidas y especificaciones." />
   <meta property="og:image" content="img/buro.png" />
+  <link rel="canonical" href="https://lumina-buro.vercel.app/construccion" />
   <meta name="twitter:card" content="summary_large_image" />
   <script>document.documentElement.classList.add("js");</script>
   <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -31,7 +32,7 @@
       <nav class="nav__links" aria-label="Secciones">
         <a href="index.html#objetivo">El descanso</a>
         <a href="index.html#producto">El buró</a>
-        <a href="construccion.html" aria-current="page">Construcción</a>
+        <a href="construccion" aria-current="page">Construcción</a>
         <a href="index.html#nosotros">Nosotros</a>
         <a href="index.html#diagnostico">Diagnóstico</a>
         <a href="index.html#contacto">Contacto</a>
@@ -47,7 +48,7 @@
     <div class="nav__mobile" id="menu-movil" data-menu-panel hidden>
       <a href="index.html#objetivo">El descanso</a>
       <a href="index.html#producto">El buró</a>
-      <a href="construccion.html" aria-current="page">Construcción</a>
+      <a href="construccion" aria-current="page">Construcción</a>
       <a href="index.html#nosotros">Nosotros</a>
       <a href="index.html#diagnostico">Diagnóstico</a>
       <a href="index.html#contacto">Contacto</a>
@@ -95,12 +96,12 @@
       <div class="wrap">
         <div class="galeria__head" data-reveal>
           <h2 id="galeria-title" class="display">Más fotos del buró</h2>
-          <p class="lede">El prototipo final en contexto, los detalles del interior iluminado y el trabajo de taller. La galería se irá llenando conforme avance la producción.</p>
+          <p class="lede">Una lectura visual del prototipo: su escala en la habitación, el detalle de la luz y el trabajo de ensamble que sostiene cada plano.</p>
         </div>
 
         <div class="galeria__grid">
           <figure class="shot shot--tall" data-reveal>
-            <img src="img/buro.png" alt="Buró Lumina encendido junto a la cama, con cubierta de cristal e iluminación perimetral" width="530" height="616" loading="lazy" decoding="async" />
+            <img src="img/buro-detalle.png" alt="Detalle del buró Lumina encendido junto a la cama, con cubierta de cristal y espejo interior" width="1024" height="1536" loading="lazy" decoding="async" />
             <figcaption class="shot__cap">
               <span class="shot__tag">Prototipo final</span>
               <span class="shot__txt">La pieza encendida en la recámara, con el forro floral y la luz cálida a media intensidad.</span>
@@ -108,34 +109,34 @@
           </figure>
 
           <figure class="shot" data-reveal data-reveal-delay="100">
-            <img src="img/buro-concepto.png" alt="Vista general del buró con cristal templado, efecto 3D y control de luz" width="265" height="308" loading="lazy" decoding="async" />
+            <img src="img/buro-en-contexto.png" alt="Buró Lumina junto a la cama, mostrando el efecto de profundidad del espejo" width="1536" height="1024" loading="lazy" decoding="async" />
             <figcaption class="shot__cap">
               <span class="shot__tag">Vista general</span>
               <span class="shot__txt">Cubierta de cristal, interior personalizable y luz integrada en un mismo volumen.</span>
             </figcaption>
           </figure>
 
-          <figure class="shot shot--empty" data-reveal data-reveal-delay="60">
-            <span class="shot__ph" aria-hidden="true"></span>
-            <figcaption class="shot__cap shot__cap--ph">
-              <span class="shot__tag">Foto pendiente</span>
-              <span class="shot__txt">Detalle de la cubierta de cristal y del borde pulido.</span>
+          <figure class="shot" data-reveal data-reveal-delay="60">
+            <img src="img/buro-concepto.png" alt="Vista de la cubierta de cristal templado del buró Lumina" width="265" height="308" loading="lazy" decoding="async" />
+            <figcaption class="shot__cap">
+              <span class="shot__tag">Materia / 01</span>
+              <span class="shot__txt">Cristal templado, borde limpio y una luz que recorre el interior.</span>
             </figcaption>
           </figure>
 
-          <figure class="shot shot--empty" data-reveal data-reveal-delay="120">
-            <span class="shot__ph" aria-hidden="true"></span>
-            <figcaption class="shot__cap shot__cap--ph">
-              <span class="shot__tag">Foto pendiente</span>
-              <span class="shot__txt">Interior iluminado: espejo, forro y tira LED de cerca.</span>
+          <figure class="shot" data-reveal data-reveal-delay="120">
+            <img src="img/buro.png" alt="Interior iluminado del buró Lumina con flores y espejo posterior" width="530" height="616" loading="lazy" decoding="async" />
+            <figcaption class="shot__cap">
+              <span class="shot__tag">Materia / 02</span>
+              <span class="shot__txt">El espejo devuelve la luz y convierte pocos centímetros en profundidad.</span>
             </figcaption>
           </figure>
 
-          <figure class="shot shot--empty" data-reveal data-reveal-delay="180">
-            <span class="shot__ph" aria-hidden="true"></span>
-            <figcaption class="shot__cap shot__cap--ph">
-              <span class="shot__tag">Foto pendiente</span>
-              <span class="shot__txt">Proceso en taller: corte y ensamble de los paneles.</span>
+          <figure class="shot" data-reveal data-reveal-delay="180">
+            <img src="img/taller-ensamble.png" alt="Manos ensamblando los paneles de madera del buró en el taller" width="1536" height="1024" loading="lazy" decoding="async" />
+            <figcaption class="shot__cap">
+              <span class="shot__tag">Taller / 01</span>
+              <span class="shot__txt">Paneles, escuadra y medida: el armado empieza antes de encender la luz.</span>
             </figcaption>
           </figure>
         </div>
@@ -147,7 +148,7 @@
       <div class="wrap">
         <div class="planos__head" data-reveal>
           <h2 id="planos-title" class="display">Armado paso a paso</h2>
-          <p class="lede">Como armar una pieza de bloques: en cada paso se suma una parte y la estructura crece. El plano isométrico se actualiza solo, con las piezas y las medidas de la etapa.</p>
+          <p class="lede">Cómo se arma una pieza de bloques: cada paso suma una parte y hace visible la lógica del conjunto. El plano isométrico se actualiza con las piezas y medidas de cada etapa.</p>
         </div>
 
         <div class="plano" data-reveal>
@@ -404,7 +405,7 @@
       <nav class="footer__nav" aria-label="Enlaces del sitio">
         <a href="index.html#objetivo">El descanso</a>
         <a href="index.html#producto">El buró</a>
-        <a href="construccion.html" aria-current="page">Construcción</a>
+        <a href="construccion" aria-current="page">Construcción</a>
         <a href="index.html#nosotros">Nosotros</a>
         <a href="index.html#diagnostico">Diagnóstico</a>
       </nav>
