@@ -60,15 +60,29 @@
     <!-- ------------------------------------------------------------- intro -->
     <section class="subhero" aria-labelledby="subhero-title">
       <div class="wrap subhero__inner">
-        <div data-reveal>
+        <div class="subhero__copy" data-reveal>
           <a class="subhero__back" href="index.html">
             <span aria-hidden="true">&larr;</span> Volver al inicio
           </a>
-          <p class="eyebrow">Planos, fotos y especificaciones</p>
-          <h1 id="subhero-title" class="subhero__title">Así se construye<br />el buró.</h1>
-          <p class="subhero__lede">Del piso a la cubierta de cristal: el armado completo en seis pasos, con las medidas reales, las piezas de cada etapa y la ficha técnica de la pieza terminada.</p>
+          <p class="eyebrow">Cuaderno de taller / 01</p>
+          <h1 id="subhero-title" class="subhero__title">Una pieza que se<br /><em>arma con intención.</em></h1>
+          <p class="subhero__lede">Del piso a la cubierta de cristal: seis pasos para entender el buró Lumina, sus medidas reales y la lógica detrás de cada unión.</p>
+          <div class="subhero__meta" aria-label="Resumen del proyecto">
+            <span>Planos de montaje</span>
+            <span>Escala real</span>
+            <span>Prototipo 01</span>
+          </div>
         </div>
-        <dl class="subhero__facts" data-reveal data-reveal-delay="120">
+        <div class="subhero__visual" data-reveal data-reveal-delay="120">
+          <div class="subhero__visual-grid" aria-hidden="true"></div>
+          <figure class="builder-card">
+            <div class="builder-card__top"><span>Equipo de obra</span><span>LB / 001</span></div>
+            <img src="img/constructor-lego.png" alt="Figura de constructor sosteniendo una pieza de madera" width="570" height="515" />
+            <figcaption><strong>Construir también es cuidar.</strong><span>La pieza empieza aquí: una parte a la vez.</span></figcaption>
+          </figure>
+          <span class="subhero__stamp" aria-hidden="true">hecho<br />a mano</span>
+        </div>
+        <dl class="subhero__facts" data-reveal data-reveal-delay="180">
           <div><dt>Alto &times; ancho &times; fondo</dt><dd>52 &times; 40 &times; 40 <span>cm</span></dd></div>
           <div><dt>Estructura</dt><dd>5 <span>paneles de madera</span></dd></div>
           <div><dt>Pasos de armado</dt><dd>06</dd></div>
@@ -94,7 +108,7 @@
           </figure>
 
           <figure class="shot" data-reveal data-reveal-delay="100">
-            <img src="img/dise%C3%B1o%20final%20del%20buro.png" alt="Vista general del buró con cristal templado, efecto 3D y control de luz" width="265" height="308" loading="lazy" decoding="async" />
+            <img src="img/buro-concepto.png" alt="Vista general del buró con cristal templado, efecto 3D y control de luz" width="265" height="308" loading="lazy" decoding="async" />
             <figcaption class="shot__cap">
               <span class="shot__tag">Vista general</span>
               <span class="shot__txt">Cubierta de cristal, interior personalizable y luz integrada en un mismo volumen.</span>
@@ -139,10 +153,16 @@
         <div class="plano" data-reveal>
           <div class="plano__view">
             <div class="plano__stage">
-              <svg class="plano__svg" data-plano role="img" aria-label="Vista isométrica del armado del buró, paso a paso"></svg>
+              <div class="plano__toolbar"><span>PLANO ISOMÉTRICO</span><span>ESCALA 1:10</span></div>
+              <svg class="plano__svg" data-plano role="img" tabindex="0" aria-label="Vista isométrica del armado del buró, paso a paso"></svg>
               <noscript>
                 <p class="plano__hint">Activa JavaScript para ver el plano isométrico del armado.</p>
               </noscript>
+              <div class="plano__legend" aria-label="Leyenda del plano">
+                <span><i class="legend-swatch legend-swatch--wood"></i>Madera</span>
+                <span><i class="legend-swatch legend-swatch--mirror"></i>Espejo</span>
+                <span><i class="legend-swatch legend-swatch--led"></i>Luz LED</span>
+              </div>
             </div>
             <p class="plano__hint">Vista isométrica &middot; medidas en centímetros</p>
           </div>
