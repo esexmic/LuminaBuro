@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Así se construye — Lumina Buró</title>
+  <meta name="description" content="Planos isométricos, armado paso a paso, más fotos y especificaciones técnicas del buró Lumina: medidas, materiales, iluminación LED y personalización." />
+  <meta name="theme-color" content="#12100c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lumina Buró" />
+  <meta property="og:title" content="Así se construye — Lumina Buró" />
+  <meta property="og:description" content="El armado del buró en seis pasos, con planos, medidas y especificaciones." />
+  <meta property="og:image" content="img/buro.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/construccion.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip" href="#galeria">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Lumina Buró, inicio">
+        <img src="img/mark.png" alt="" width="151" height="149" />
+        <span class="nav__brand-name">Lumina Buró</span>
+      </a>
+      <nav class="nav__links" aria-label="Secciones">
+        <a href="index.html#objetivo">El descanso</a>
+        <a href="index.html#producto">El buró</a>
+        <a href="construccion.html" aria-current="page">Construcción</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#diagnostico">Diagnóstico</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--solid" href="index.html#producto">Conoce el buró</a>
+      </div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="menu-movil" data-menu-panel hidden>
+      <a href="index.html#objetivo">El descanso</a>
+      <a href="index.html#producto">El buró</a>
+      <a href="construccion.html" aria-current="page">Construcción</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#diagnostico">Diagnóstico</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a class="btn btn--solid" href="index.html#producto">Conoce el buró</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ------------------------------------------------------------- intro -->
+    <section class="subhero" aria-labelledby="subhero-title">
+      <div class="wrap subhero__inner">
+        <div data-reveal>
+          <a class="subhero__back" href="index.html">
+            <span aria-hidden="true">&larr;</span> Volver al inicio
+          </a>
+          <p class="eyebrow">Planos, fotos y especificaciones</p>
+          <h1 id="subhero-title" class="subhero__title">Así se construye<br />el buró.</h1>
+          <p class="subhero__lede">Del piso a la cubierta de cristal: el armado completo en seis pasos, con las medidas reales, las piezas de cada etapa y la ficha técnica de la pieza terminada.</p>
+        </div>
+        <dl class="subhero__facts" data-reveal data-reveal-delay="120">
+          <div><dt>Alto &times; ancho &times; fondo</dt><dd>52 &times; 40 &times; 40 <span>cm</span></dd></div>
+          <div><dt>Estructura</dt><dd>5 <span>paneles de madera</span></dd></div>
+          <div><dt>Pasos de armado</dt><dd>06</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------- galería -->
+    <section class="galeria section" id="galeria" aria-labelledby="galeria-title">
+      <div class="wrap">
+        <div class="galeria__head" data-reveal>
+          <h2 id="galeria-title" class="display">Más fotos del buró</h2>
+          <p class="lede">El prototipo final en contexto, los detalles del interior iluminado y el trabajo de taller. La galería se irá llenando conforme avance la producción.</p>
+        </div>
+
+        <div class="galeria__grid">
+          <figure class="shot shot--tall" data-reveal>
+            <img src="img/buro.png" alt="Buró Lumina encendido junto a la cama, con cubierta de cristal e iluminación perimetral" width="530" height="616" loading="lazy" decoding="async" />
+            <figcaption class="shot__cap">
+              <span class="shot__tag">Prototipo final</span>
+              <span class="shot__txt">La pieza encendida en la recámara, con el forro floral y la luz cálida a media intensidad.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot" data-reveal data-reveal-delay="100">
+            <img src="img/dise%C3%B1o%20final%20del%20buro.png" alt="Vista general del buró con cristal templado, efecto 3D y control de luz" width="265" height="308" loading="lazy" decoding="async" />
+            <figcaption class="shot__cap">
+              <span class="shot__tag">Vista general</span>
+              <span class="shot__txt">Cubierta de cristal, interior personalizable y luz integrada en un mismo volumen.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot shot--empty" data-reveal data-reveal-delay="60">
+            <span class="shot__ph" aria-hidden="true"></span>
+            <figcaption class="shot__cap shot__cap--ph">
+              <span class="shot__tag">Foto pendiente</span>
+              <span class="shot__txt">Detalle de la cubierta de cristal y del borde pulido.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot shot--empty" data-reveal data-reveal-delay="120">
+            <span class="shot__ph" aria-hidden="true"></span>
+            <figcaption class="shot__cap shot__cap--ph">
+              <span class="shot__tag">Foto pendiente</span>
+              <span class="shot__txt">Interior iluminado: espejo, forro y tira LED de cerca.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot shot--empty" data-reveal data-reveal-delay="180">
+            <span class="shot__ph" aria-hidden="true"></span>
+            <figcaption class="shot__cap shot__cap--ph">
+              <span class="shot__tag">Foto pendiente</span>
+              <span class="shot__txt">Proceso en taller: corte y ensamble de los paneles.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ planos -->
+    <section class="planos section" id="planos" aria-labelledby="planos-title">
+      <div class="wrap">
+        <div class="planos__head" data-reveal>
+          <h2 id="planos-title" class="display">Armado paso a paso</h2>
+          <p class="lede">Como armar una pieza de bloques: en cada paso se suma una parte y la estructura crece. El plano isométrico se actualiza solo, con las piezas y las medidas de la etapa.</p>
+        </div>
+
+        <div class="plano" data-reveal>
+          <div class="plano__view">
+            <div class="plano__stage">
+              <svg class="plano__svg" data-plano role="img" aria-label="Vista isométrica del armado del buró, paso a paso"></svg>
+              <noscript>
+                <p class="plano__hint">Activa JavaScript para ver el plano isométrico del armado.</p>
+              </noscript>
+            </div>
+            <p class="plano__hint">Vista isométrica &middot; medidas en centímetros</p>
+          </div>
+
+          <div class="plano__panel">
+            <ol class="steps">
+              <li class="step" data-step="1" data-parts="bottom">
+                <span class="step__num" aria-hidden="true">01</span>
+                <div class="step__body">
+                  <h3 class="step__title">El piso</h3>
+                  <p class="step__text">Todo empieza con el tablero base. Es la pieza que fija la medida y el nivel: sobre ella se levantan las cuatro paredes.</p>
+                  <ul class="step__facts">
+                    <li><span>Piezas</span>1 tablero base</li>
+                    <li><span>Medida</span>40 &times; 40 cm &middot; 15 mm</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="step" data-step="2" data-parts="bottom,wallFarX,wallNearX">
+                <span class="step__num" aria-hidden="true">02</span>
+                <div class="step__body">
+                  <h3 class="step__title">Las laterales</h3>
+                  <p class="step__text">Levantamos las dos paredes laterales y las fijamos al piso. Marcan la profundidad y empiezan a armar la caja.</p>
+                  <ul class="step__facts">
+                    <li><span>Piezas</span>2 paneles laterales</li>
+                    <li><span>Medida</span>40 &times; 52 cm &middot; 15 mm</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="step" data-step="3" data-parts="bottom,wallFarX,wallNearX,wallFarY,wallNearY">
+                <span class="step__num" aria-hidden="true">03</span>
+                <div class="step__body">
+                  <h3 class="step__title">Frente y fondo</h3>
+                  <p class="step__text">Sumamos el frente y el fondo. Con estas cinco piezas la caja queda cerrada por sus cuatro lados: ya es la estructura del buró.</p>
+                  <ul class="step__facts">
+                    <li><span>Piezas</span>2 paneles (frente + fondo)</li>
+                    <li><span>Medida</span>40 &times; 52 cm &middot; 15 mm</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="step" data-step="4" data-parts="bottom,wallFarX,wallNearX,wallFarY,wallNearY,mirror,led">
+                <span class="step__num" aria-hidden="true">04</span>
+                <div class="step__body">
+                  <h3 class="step__title">El interior</h3>
+                  <p class="step__text">Al fondo, pegado a la pared, va el espejo: refleja el contenido y multiplica la profundidad hasta lograr el efecto 3D. Sobre el borde superior se pega la tira LED.</p>
+                  <ul class="step__facts">
+                    <li><span>Piezas</span>Espejo + tira LED</li>
+                    <li><span>Espejo</span>37 &times; 49 cm</li>
+                    <li><span>Luz</span>12 V DC &middot; cálido, frío y vivo</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="step" data-step="5" data-parts="bottom,wallFarX,wallNearX,wallFarY,wallNearY,mirror,led,glass">
+                <span class="step__num" aria-hidden="true">05</span>
+                <div class="step__body">
+                  <h3 class="step__title">La cubierta</h3>
+                  <p class="step__text">El cristal templado cierra la caja por arriba. Deja pasar la luz del LED y permite ver el interior desde arriba sin abrir nada.</p>
+                  <ul class="step__facts">
+                    <li><span>Pieza</span>Cristal templado</li>
+                    <li><span>Medida</span>40 &times; 40 cm &middot; 6 mm</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="step" data-step="6" data-parts="bottom,wallFarX,wallNearX,wallFarY,wallNearY,mirror,led,glass,cable">
+                <span class="step__num" aria-hidden="true">06</span>
+                <div class="step__body">
+                  <h3 class="step__title">Luz y control</h3>
+                  <p class="step__text">Sale el cable de alimentación y se conecta el receptor del remoto. Encender, elegir tono e intensidad, y listo: el buró ya está terminado.</p>
+                  <ul class="step__facts">
+                    <li><span>Piezas</span>Cable + receptor</li>
+                    <li><span>Control</span>Remoto &middot; 3 intensidades</li>
+                    <li><span>Cable</span>1.5 m</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+
+            <div class="plano__nav">
+              <button class="plano__btn" type="button" data-plano-prev>
+                <span aria-hidden="true">&larr;</span> Anterior
+              </button>
+              <div class="plano__dots" data-plano-dots role="group" aria-label="Pasos de armado"></div>
+              <button class="plano__btn" type="button" data-plano-next>
+                Siguiente <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------- especificaciones -->
+    <section class="tecnicas section" id="especificaciones" aria-labelledby="tecnicas-title">
+      <div class="wrap">
+        <div class="tecnicas__head" data-reveal>
+          <h2 id="tecnicas-title" class="display">Ficha técnica</h2>
+          <p class="lede">Las medidas y los componentes de la pieza terminada, agrupados por tema. Son especificaciones de diseño y pueden ajustarse en la etapa de producción.</p>
+        </div>
+
+        <div class="tecnicas__group" data-reveal>
+          <h3 class="tecnicas__label">Medidas y materiales</h3>
+          <dl class="specs">
+            <div class="spec">
+              <dt>Dimensiones</dt>
+              <dd class="spec__value">52 &times; 40 &times; 40 cm</dd>
+              <p class="spec__why">Alto, ancho y profundidad para quedar junto a la cama sin estorbar, con espacio de sobra para tus cosas.</p>
+            </div>
+            <div class="spec">
+              <dt>Paneles</dt>
+              <dd class="spec__value">15 mm de espesor</dd>
+              <p class="spec__why">Madera estructurada en cinco recuadros unidos en forma de caja para una pieza sólida y estable.</p>
+            </div>
+            <div class="spec">
+              <dt>Estructura</dt>
+              <dd class="spec__value">5 paneles de madera</dd>
+              <p class="spec__why">Un piso, dos laterales y dos frentes que forman la caja. Aguanta el uso diario de una recámara.</p>
+            </div>
+            <div class="spec">
+              <dt>Cubierta</dt>
+              <dd class="spec__value">Cristal templado 6 mm</dd>
+              <p class="spec__why">Deja pasar la luz y permite ver el interior desde arriba, con el borde pulido para un remate limpio.</p>
+            </div>
+          </dl>
+        </div>
+
+        <div class="tecnicas__group" data-reveal>
+          <h3 class="tecnicas__label">Luz y electrónica</h3>
+          <dl class="specs">
+            <div class="spec">
+              <dt>Iluminación</dt>
+              <dd class="spec__value">Tira LED regulable</dd>
+              <p class="spec__why">Cálidos, fríos y vivos: tres familias de color para cambiar el ánimo de la noche.</p>
+            </div>
+            <div class="spec">
+              <dt>Tonalidades</dt>
+              <dd class="spec__value">2700 K &middot; 4000 K &middot; RGB</dd>
+              <p class="spec__why">Del ámbar cálido para leer al azul sereno para bajar revoluciones antes de dormir.</p>
+            </div>
+            <div class="spec">
+              <dt>Intensidad</dt>
+              <dd class="spec__value">3 niveles</dd>
+              <p class="spec__why">Baja, media y alta, fáciles de recordar y de ajustar sin levantarte de la cama.</p>
+            </div>
+            <div class="spec">
+              <dt>Control</dt>
+              <dd class="spec__value">Remoto inalámbrico</dd>
+              <p class="spec__why">Enciende, cambia de tono y regula la intensidad desde la cama o desde la puerta.</p>
+            </div>
+            <div class="spec">
+              <dt>Alimentación</dt>
+              <dd class="spec__value">12 V DC &middot; cable 1.5 m</dd>
+              <p class="spec__why">Conexión directa a la toma de corriente, sin baterías que se agotan en la peor noche.</p>
+            </div>
+            <div class="spec">
+              <dt>Consumo</dt>
+              <dd class="spec__value">LED de alta eficiencia</dd>
+              <p class="spec__why">Poca energía y poco calor: la luz no altera la temperatura del mueble ni de la recámara.</p>
+            </div>
+          </dl>
+        </div>
+
+        <div class="tecnicas__group" data-reveal>
+          <h3 class="tecnicas__label">Acabado y personalización</h3>
+          <dl class="specs">
+            <div class="spec">
+              <dt>Acabado exterior</dt>
+              <dd class="spec__value">Madera oscura, laca mate</dd>
+              <p class="spec__why">Un tono profundo que deja que la luz del interior sea la protagonista.</p>
+            </div>
+            <div class="spec">
+              <dt>Interior</dt>
+              <dd class="spec__value">Forro personalizable</dd>
+              <p class="spec__why">Elige el diseño interior que va contigo y cámbialo cuando cambie la temporada.</p>
+            </div>
+            <div class="spec">
+              <dt>Efecto 3D</dt>
+              <dd class="spec__value">Espejo al fondo</dd>
+              <p class="spec__why">El forro y el espejo del fondo crean sensación de profundidad infinita con muy pocos centímetros.</p>
+            </div>
+            <div class="spec">
+              <dt>Configuración</dt>
+              <dd class="spec__value">A tu medida</dd>
+              <p class="spec__why">Eliges tono de luz, intensidad y forro para armar la configuración de tu recámara.</p>
+            </div>
+          </dl>
+        </div>
+
+        <p class="tecnicas__note" data-reveal>Especificaciones de diseño del prototipo, sujetas a ajustes de producción.</p>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------- cierre -->
+    <section class="cierre section" aria-labelledby="cierre-title">
+      <div class="wrap cierre__inner">
+        <div data-reveal>
+          <h2 id="cierre-title" class="display">¿Armamos el tuyo?</h2>
+          <p class="lede">Cuéntanos en qué habitación va el primero y definimos la configuración: tono de luz, intensidad y forro interior. Te confirmamos precio y fecha de entrega al cerrar la etapa de prototipo.</p>
+        </div>
+        <div class="cierre__actions" data-reveal data-reveal-delay="80">
+          <a class="btn btn--solid" href="index.html#contacto">Contactar</a>
+          <a class="btn btn--ghost" href="index.html#producto">Volver al producto</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="img/mark.png" alt="" width="151" height="149" />
+        <p class="footer__legal">Lumina Buró S.A. de C.V.</p>
+        <p class="footer__meta">Giro industrial / manufacturero. Marca con consulta preliminar ante el IMPI (MARCANET).</p>
+        <p class="footer__note">Proyecto en desarrollo: los datos de contacto se publicarán al cerrar la etapa de prototipo.</p>
+      </div>
+      <div class="footer__contact">
+        <h2 id="contacto-title" class="footer__title">Contacto</h2>
+        <a class="pending" data-contact="maps" data-reveal>
+          <span class="pending__label">Domicilio físico</span>
+          <span class="pending__value" data-value>Ver en el mapa</span>
+        </a>
+        <a class="pending" data-contact="telefono" data-reveal data-reveal-delay="60">
+          <span class="pending__label">Teléfono</span>
+          <span class="pending__value" data-value>Por definir</span>
+        </a>
+        <a class="pending" data-contact="sucursal" data-reveal data-reveal-delay="120">
+          <span class="pending__label">Sucursal inicial</span>
+          <span class="pending__value" data-value>Por definir</span>
+        </a>
+        <a class="pending" data-contact="email" data-reveal data-reveal-delay="180" hidden>
+          <span class="pending__label">Correo</span>
+          <span class="pending__value" data-value>Por definir</span>
+        </a>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del sitio">
+        <a href="index.html#objetivo">El descanso</a>
+        <a href="index.html#producto">El buró</a>
+        <a href="construccion.html" aria-current="page">Construcción</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#diagnostico">Diagnóstico</a>
+      </nav>
+    </div>
+    <div class="wrap footer__base">
+      <p>&copy; <span data-year>2026</span> Lumina Buró S.A. de C.V. Todos los derechos reservados.</p>
+      <p>Hecho en México.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/plano.js" defer></script>
+</body>
+</html>

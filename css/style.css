@@ -298,6 +298,8 @@ p { margin: 0; }
 .spec__value { font-family: var(--font-display); font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 0.55rem 0 0.5rem; }
 .spec__why { color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
 
+.producto__more { margin-top: clamp(1.4rem, 3vw, 2rem); }
+
 /* -------------------------------------------------------------- nosotros */
 .nosotros { background: var(--bg-2); }
 .nosotros__grid { margin-top: clamp(2.5rem, 6vw, 4.5rem); display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
