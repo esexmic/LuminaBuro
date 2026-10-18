@@ -123,9 +123,10 @@
       image.setAttribute("tabindex", "0");
       image.setAttribute("aria-label", "Abrir imagen ampliada");
       var open = function () {
-        dialogImage.src = image.currentSrc || image.src;
-        dialogImage.alt = image.alt;
-        dialogCaption.textContent = image.alt;
+        var source = image.getAttribute("data-lightbox-src") || image.currentSrc || image.src;
+        dialogImage.src = source;
+        dialogImage.alt = image.getAttribute("data-lightbox-alt") || image.alt || "Vista ampliada del buró Lumina";
+        dialogCaption.textContent = dialogImage.alt;
         if (typeof dialog.showModal === "function") dialog.showModal();
       };
       image.addEventListener("click", open);
@@ -146,7 +147,9 @@
     mapsQuery: "Lumina Buró, México",  /* se usa mientras no haya domicilio */
     telefono: "",             /* p. ej. "+52 55 1234 5678" */
     sucursal: "",             /* p. ej. "Sucursal Polanco, CDMX" */
-    email: ""                 /* p. ej. "hola@luminaburo.mx" */
+    email: "",                /* p. ej. "hola@luminaburo.mx" */
+    whatsapp: "",             /* solo números, p. ej. "5215512345678" */
+    instagram: ""             /* p. ej. "https://instagram.com/luminaburo" */
   };
 
   (function wireContact() {
@@ -194,6 +197,26 @@
         el.classList.add("pending--external");
       }
       if (kind === "email") el.hidden = false;
+    });
+  })();
+
+  /* ---------------------------------------------------- accesos de venta */
+  (function wireSalesLinks() {
+    var message = "Hola, quiero cotizar un buró Lumina.";
+    var whatsappHref = CONTACTO.whatsapp
+      ? "https://wa.me/" + CONTACTO.whatsapp.replace(/[^\d]/g, "") + "?text=" + encodeURIComponent(message)
+      : "#contacto";
+    var instagramHref = CONTACTO.instagram || "#contacto";
+
+    document.querySelectorAll(".js-whatsapp").forEach(function (link) {
+      link.href = whatsappHref;
+      if (CONTACTO.whatsapp) { link.target = "_blank"; link.rel = "noopener"; }
+      else link.setAttribute("aria-label", link.textContent.trim() + ". Agrega el número de WhatsApp en js/main.js.");
+    });
+    document.querySelectorAll(".js-instagram").forEach(function (link) {
+      link.href = instagramHref;
+      if (CONTACTO.instagram) { link.target = "_blank"; link.rel = "noopener"; }
+      else link.setAttribute("aria-label", link.textContent.trim() + ". Agrega el enlace de Instagram en js/main.js.");
     });
   })();
 

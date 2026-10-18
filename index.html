@@ -36,7 +36,7 @@
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="nav__cta">
-        <a class="btn btn--solid" href="#producto">Conoce el buró</a>
+        <a class="btn btn--solid" href="#contacto">Cotiza el tuyo</a>
       </div>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle>
         <span class="nav__toggle-bars" aria-hidden="true"></span>
@@ -50,7 +50,7 @@
       <a href="#nosotros">Nosotros</a>
       <a href="#diagnostico">Diagnóstico</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn btn--solid" href="#producto">Conoce el buró</a>
+      <a class="btn btn--solid" href="#contacto">Cotiza el tuyo</a>
     </div>
   </header>
 
@@ -63,9 +63,10 @@
           <h1 id="hero-title" class="hero__title">Ilumina tu luz<br />en la oscuridad.</h1>
           <p class="hero__sub">Un buró que integra iluminación LED regulable, efecto 3D y un interior personalizable para transformar la noche de tu recámara.</p>
           <div class="hero__actions">
-            <a class="btn btn--solid" href="#producto">Conoce el buró</a>
-            <a class="btn btn--ghost" href="#nosotros">Nuestra historia</a>
+            <a class="btn btn--solid js-whatsapp" href="#contacto">Quiero cotizar <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="#producto">Ver cómo se ve</a>
           </div>
+          <p class="hero__microcopy">Respuesta directa · Personalización · Hecho en México</p>
         </div>
         <div class="hero__visual" data-reveal data-reveal-delay="120">
           <div class="led-stage" data-led-stage>
@@ -75,6 +76,16 @@
         </div>
       </div>
       <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="social-proof" aria-label="Compra directa">
+      <div class="wrap social-proof__inner">
+        <p><strong>¿Te imaginas uno junto a tu cama?</strong> Escríbenos y te ayudamos a elegir tu configuración.</p>
+        <div class="social-proof__actions">
+          <a class="text-link js-whatsapp" href="#contacto">Hablar por WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="text-link js-instagram" href="#contacto">Ver Instagram <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
 
     <section class="objetivo section" id="objetivo" aria-labelledby="objetivo-title">
@@ -171,8 +182,39 @@
             </div>
           </dl>
           <p class="producto__more" data-reveal>
+            <a class="btn btn--solid js-whatsapp" href="#contacto">Quiero uno así <span aria-hidden="true">↗</span></a>
             <a class="btn btn--ghost" href="construccion">Ver planos y armado</a>
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="escenas section" aria-labelledby="escenas-title">
+      <div class="wrap">
+        <div class="escenas__head" data-reveal>
+          <div>
+            <p class="eyebrow">Ejemplos para imaginarlo</p>
+            <h2 id="escenas-title" class="display">Una pieza que cambia con tu noche.</h2>
+          </div>
+          <p class="lede">Mira el buró con diferentes ambientes y elige el que más se parece a tu espacio.</p>
+        </div>
+        <div class="escenas__grid">
+          <button class="escena escena--large" type="button" data-lightbox data-lightbox-src="img/buro-producto-calido.webp" data-reveal>
+            <img src="img/buro-producto-calido.webp" alt="Buró Lumina con luz cálida junto a la cama" loading="lazy" decoding="async" />
+            <span class="escena__label"><strong>Para bajar el ritmo</strong><small>Luz cálida y suave</small></span>
+          </button>
+          <button class="escena" type="button" data-lightbox data-lightbox-src="img/buro-producto-frio.webp" data-reveal data-reveal-delay="80">
+            <img src="img/buro-producto-frio.webp" alt="Buró Lumina con luz fría y ambiente sereno" loading="lazy" decoding="async" />
+            <span class="escena__label"><strong>Para concentrarte</strong><small>Luz fría y limpia</small></span>
+          </button>
+          <button class="escena" type="button" data-lightbox data-lightbox-src="img/buro-producto-vivo.webp" data-reveal data-reveal-delay="160">
+            <img src="img/buro-producto-vivo.webp" alt="Buró Lumina con iluminación viva y colorida" loading="lazy" decoding="async" />
+            <span class="escena__label"><strong>Para darle carácter</strong><small>Color vivo y personal</small></span>
+          </button>
+        </div>
+        <div class="escenas__cta" data-reveal>
+          <p>¿Cuál va con tu recámara?</p>
+          <a class="btn btn--solid js-whatsapp" href="#contacto">Cuéntanos por WhatsApp <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -260,7 +302,8 @@
           <p class="lede">Cuéntanos en qué habitación va el primero y armamos la configuración: tono de luz, intensidad y forro interior. Te confirmamos precio y fecha de entrega al cerrar la etapa de prototipo.</p>
         </div>
         <div class="cierre__actions" data-reveal data-reveal-delay="80">
-          <a class="btn btn--solid" href="#contacto">Contactar</a>
+          <a class="btn btn--solid js-whatsapp" href="#contacto">Cotizar mi buró <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost js-instagram" href="#contacto">Ver novedades en Instagram</a>
           <a class="btn btn--ghost" href="construccion">Cómo se construye</a>
         </div>
       </div>
@@ -294,6 +337,10 @@
             <span class="pending__label">Correo</span>
             <span class="pending__value" data-value>Por definir</span>
           </a>
+          <div class="footer__socials">
+            <a class="btn btn--solid js-whatsapp" href="#contacto">WhatsApp</a>
+            <a class="btn btn--ghost js-instagram" href="#contacto">Instagram</a>
+          </div>
         </div>
       <nav class="footer__nav" aria-label="Enlaces del sitio">
         <a href="#objetivo">El descanso</a>
@@ -317,6 +364,15 @@
       <p class="lightbox__caption" data-lightbox-caption></p>
     </div>
   </dialog>
+
+  <div class="quick-actions" aria-label="Accesos rápidos">
+    <a class="quick-action quick-action--whatsapp js-whatsapp" href="#contacto" aria-label="Cotizar por WhatsApp">
+      <span class="quick-action__icon" aria-hidden="true">⌁</span><span>Cotiza por WhatsApp</span>
+    </a>
+    <a class="quick-action quick-action--instagram js-instagram" href="#contacto" aria-label="Ver Lumina Buró en Instagram">
+      <span class="quick-action__icon" aria-hidden="true">◎</span><span>Ver Instagram</span>
+    </a>
+  </div>
 
   <script src="js/main.js" defer></script>
 </body>
