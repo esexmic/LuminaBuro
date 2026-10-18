@@ -349,7 +349,7 @@ p { margin: 0; }
 .footer__legal { font-family: var(--font-display); font-size: 1.15rem; }
 .footer__meta { color: var(--muted-2); font-size: 0.88rem; margin-top: 0.5rem; max-width: 40ch; }
 .footer__note { color: var(--muted); font-size: 0.85rem; margin-top: 1.2rem; max-width: 40ch; }
-.footer__title { font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted-2); font-family: var(--font-body); font-weight: 600; margin-bottom: 1.2rem; }
+.footer__title { font-size: 1.3rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted-2); font-family: var(--font-body); font-weight: 600; margin-bottom: 1.2rem; }
 .footer__nav a:active { transform: scale(0.97); }
 
 .pending {

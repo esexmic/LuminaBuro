@@ -20,6 +20,24 @@
         ],
         "createdAt": "2026-10-18T00:01:54.217Z",
         "reason": "Intentional product-light treatment in the technical LED blueprint, kept as a semantic lighting cue."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T00:30:27.030Z",
+        "reason": "Agent: verified false positives; content is inset by .section, .wrap, bordered cards, and the lightbox inner wrapper."
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "construccion.html"
+        ],
+        "createdAt": "2026-10-18T00:31:19.971Z",
+        "reason": "Agent: intentional blueprint measurement surface; the grid belongs to the technical drawing stage, not general decoration."
       }
     ]
   }
