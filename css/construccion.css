@@ -27,3 +27,18 @@
 .legend-swatch--led { box-shadow:0 0 4px rgba(224,164,88,.7); }
 .plano__svg .pt--led { filter:drop-shadow(0 0 2px rgba(224,164,88,.82)); }
 @media (max-width:760px) { .subhero__title { font-size:clamp(2.8rem,13vw,4.55rem); } .display { font-size:clamp(1.85rem,8vw,2.65rem); } }
+
+/* Legibility floor for technical labels and controls. */
+.subhero__meta { font-size:.72rem; }
+.subhero__facts dt { font-size:.72rem; }
+.builder-card__top { font-size:.72rem; }
+.plano__toolbar { font-size:.72rem; }
+.plano__legend { font-size:.72rem; }
+.shot__tag { font-size:.72rem; }
+.step__facts span { font-size:.7rem; }
+.tecnicas__label { font-size:.75rem; }
+.subhero__facts dd span { font-size:.72rem; }
+.builder-card figcaption { inset:auto .75rem .75rem; padding:.75rem; background:rgba(18,16,12,.82); }
+.builder-card figcaption span { font-size:.8rem; }
+.legend-swatch--led { box-shadow:none; }
+.plano__svg .pt--led { filter:none; }
