@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "construccion.html"
+        ],
+        "createdAt": "2026-10-18T00:01:45.829Z",
+        "reason": "The page uses a padded .wrap container inside each section and 19-40px inset inside the blueprint stage; detector cannot see the nested layout."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "construccion.html"
+        ],
+        "createdAt": "2026-10-18T00:01:54.217Z",
+        "reason": "Intentional product-light treatment in the technical LED blueprint, kept as a semantic lighting cue."
+      }
+    ]
+  }
+}
