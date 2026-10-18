@@ -391,7 +391,7 @@ p { margin: 0; }
 /* Física con ratón; en pantallas táctiles no hay hover, así que damos
    retroalimentación al tocar (:active) y una animación que siempre corre. */
 .spec, .diag__cell { transition: transform 0.5s var(--ease), background-color 0.4s var(--ease), border-color 0.4s var(--ease); }
-.hero__visual img, .producto__media img { transition: transform 0.6s var(--ease); }
+.hero__visual img, .producto__media img { transition: transform 0.6s var(--ease), opacity 0.32s var(--ease), filter 0.45s var(--ease); }
 
 @media (hover: hover) and (pointer: fine) {
   .spec:hover { background: var(--surface); }
