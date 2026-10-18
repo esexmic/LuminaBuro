@@ -148,8 +148,8 @@
     telefono: "",             /* p. ej. "+52 55 1234 5678" */
     sucursal: "",             /* p. ej. "Sucursal Polanco, CDMX" */
     email: "",                /* p. ej. "hola@luminaburo.mx" */
-    whatsapp: "",             /* solo números, p. ej. "5215512345678" */
-    instagram: ""             /* p. ej. "https://instagram.com/luminaburo" */
+    whatsapp: "+524771166008",
+    instagram: "https://www.instagram.com/luminaburo_/"
   };
 
   (function wireContact() {
