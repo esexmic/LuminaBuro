@@ -10,7 +10,7 @@
   <meta property="og:site_name" content="Lumina Buró" />
   <meta property="og:title" content="Lumina Buró — Ilumina tu luz en la oscuridad" />
   <meta property="og:description" content="Burós con iluminación LED regulable, efecto 3D y diseño personalizable. Mobiliario iluminado hecho en México." />
-  <meta property="og:image" content="img/buro.png" />
+  <meta property="og:image" content="img/buro-general.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <script>document.documentElement.classList.add("js");</script>
   <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -69,7 +69,7 @@
         </div>
         <div class="hero__visual" data-reveal data-reveal-delay="120">
           <div class="led-stage" data-led-stage>
-            <img class="hero__img" src="img/buro.png" alt="Buró Lumina con iluminación LED regulable y cubierta de cristal templado" width="530" height="616" />
+            <img class="hero__img" src="img/buro-general.png" alt="Buró Lumina con iluminación LED regulable y cubierta de cristal templado" width="1536" height="1024" data-lightbox />
           </div>
           <p class="hero__caption">Prototipo final &middot; acabado en madera oscura</p>
         </div>
@@ -107,19 +107,19 @@
       <div class="wrap producto__grid">
         <div class="producto__media" data-reveal>
           <div class="led-stage led-stage--wide" data-led-stage>
-            <img src="img/buro.png" alt="Buró Lumina: estructura de madera, cubierta de cristal y luz LED interior" width="530" height="616" />
+            <img src="img/buro-producto-calido.png" alt="Buró Lumina: estructura de madera, cubierta de cristal y luz LED interior" width="1536" height="1024" data-led-image data-lightbox />
           </div>
           <div class="led-demo" data-led-demo>
             <p class="led-demo__label">Pruébalo: elige el tono de luz</p>
             <div class="led-demo__row" role="group" aria-label="Tono de luz">
-              <button type="button" class="chip is-active" data-led-color="calido" data-led-value="#e6913f">Cálido</button>
-              <button type="button" class="chip" data-led-color="frio" data-led-value="#8fb6cf">Frío</button>
-              <button type="button" class="chip" data-led-color="vivo" data-led-value="#c06bd6">Vivo</button>
+              <button type="button" class="chip is-active" aria-pressed="true" data-led-color="calido" data-led-image="img/buro-producto-calido.png" data-led-value="#e6913f">Cálido</button>
+              <button type="button" class="chip" aria-pressed="false" data-led-color="frio" data-led-image="img/buro-producto-frio.png" data-led-value="#8fb6cf">Frío</button>
+              <button type="button" class="chip" aria-pressed="false" data-led-color="vivo" data-led-image="img/buro-producto-vivo.png" data-led-value="#c06bd6">Vivo</button>
             </div>
             <div class="led-demo__row" role="group" aria-label="Intensidad">
-              <button type="button" class="chip chip--sm" data-led-level="0.45" data-led-active="0">Baja</button>
-              <button type="button" class="chip chip--sm is-active" data-led-level="0.72" data-led-active="1">Media</button>
-              <button type="button" class="chip chip--sm" data-led-level="1" data-led-active="2">Alta</button>
+              <button type="button" class="chip chip--sm" aria-pressed="false" data-led-level="0.45" data-led-active="0">Baja</button>
+              <button type="button" class="chip chip--sm is-active" aria-pressed="true" data-led-level="0.72" data-led-active="1">Media</button>
+              <button type="button" class="chip chip--sm" aria-pressed="false" data-led-level="1" data-led-active="2">Alta</button>
             </div>
           </div>
         </div>
@@ -308,6 +308,15 @@
       <p>Hecho en México.</p>
     </div>
   </footer>
+
+  <dialog class="lightbox" data-lightbox-dialog aria-labelledby="lightbox-title">
+    <div class="lightbox__inner">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar imagen">&times;</button>
+      <p class="sr-only" id="lightbox-title">Vista ampliada</p>
+      <img class="lightbox__image" data-lightbox-image src="img/buro-general.png" alt="" />
+      <p class="lightbox__caption" data-lightbox-caption></p>
+    </div>
+  </dialog>
 
   <script src="js/main.js" defer></script>
 </body>

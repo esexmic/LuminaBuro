@@ -63,11 +63,25 @@
   function setLed(color) {
     document.documentElement.style.setProperty("--led", color);
   }
+  var ledImage = demo ? demo.parentElement.querySelector("[data-led-image]") : null;
+  var currentImage = "img/buro-producto-calido.png";
+
   function setGlow(level) {
     STAGES.forEach(function (stage) {
       stage.style.setProperty("--led-glow", level);
+      stage.style.setProperty("--led-brightness", String(0.78 + Number(level) * 0.22));
       stage.classList.add("is-lit");
     });
+  }
+
+  function setLedImage(src) {
+    if (!ledImage || !src || src === currentImage) return;
+    ledImage.classList.add("is-changing");
+    window.setTimeout(function () {
+      ledImage.src = src;
+      currentImage = src;
+      ledImage.classList.remove("is-changing");
+    }, reduce ? 0 : 160);
   }
 
   // Encendido inicial (tono cálido, intensidad media)
@@ -80,17 +94,48 @@
     demo.querySelectorAll("[data-led-color]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         setLed(btn.getAttribute("data-led-value"));
+        setLedImage(btn.getAttribute("data-led-image"));
         demo.querySelectorAll("[data-led-color]").forEach(function (b) { b.classList.remove("is-active"); });
+        demo.querySelectorAll("[data-led-color]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
         btn.classList.add("is-active");
+        btn.setAttribute("aria-pressed", "true");
       });
     });
     demo.querySelectorAll("[data-led-level]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         setGlow(btn.getAttribute("data-led-level"));
         demo.querySelectorAll("[data-led-level]").forEach(function (b) { b.classList.remove("is-active"); });
+        demo.querySelectorAll("[data-led-level]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
         btn.classList.add("is-active");
+        btn.setAttribute("aria-pressed", "true");
       });
     });
+  }
+
+  /* --------------------------------------------------------- visor de imágenes */
+  var dialog = document.querySelector("[data-lightbox-dialog]");
+  if (dialog) {
+    var dialogImage = dialog.querySelector("[data-lightbox-image]");
+    var dialogCaption = dialog.querySelector("[data-lightbox-caption]");
+    var closeDialog = function () { if (dialog.open) dialog.close(); };
+    document.querySelectorAll("[data-lightbox]").forEach(function (image) {
+      image.setAttribute("role", "button");
+      image.setAttribute("tabindex", "0");
+      image.setAttribute("aria-label", "Abrir imagen ampliada");
+      var open = function () {
+        dialogImage.src = image.currentSrc || image.src;
+        dialogImage.alt = image.alt;
+        dialogCaption.textContent = image.alt;
+        if (typeof dialog.showModal === "function") dialog.showModal();
+      };
+      image.addEventListener("click", open);
+      image.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(); }
+      });
+    });
+    dialog.querySelector("[data-lightbox-close]").addEventListener("click", closeDialog);
+    dialog.addEventListener("click", function (event) { if (event.target === dialog) closeDialog(); });
+    dialog.addEventListener("close", function () { dialogImage.src = "img/buro-general.png"; });
   }
 
   /* ------------------------------------------------- datos de contacto */
