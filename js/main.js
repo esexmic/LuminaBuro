@@ -136,20 +136,20 @@
     });
     dialog.querySelector("[data-lightbox-close]").addEventListener("click", closeDialog);
     dialog.addEventListener("click", function (event) { if (event.target === dialog) closeDialog(); });
-    dialog.addEventListener("close", function () { dialogImage.src = "img/buro-general.webp"; });
+    dialog.addEventListener("close", function () { dialogImage.src = "img/buro-ambiente.png"; });
   }
 
   /* ------------------------------------------------- datos de contacto */
   /* Llena estos datos y todos los links del pie se activan solos:
      mapa, teléfono (tel:), sucursal y correo (mailto:). */
   var CONTACTO = {
-    domicilio: "",            /* p. ej. "Av. Reforma 222, Ciudad de México" */
-    mapsQuery: "Lumina Buró, México",  /* se usa mientras no haya domicilio */
-    telefono: "",             /* p. ej. "+52 55 1234 5678" */
+    domicilio: "Presa de San José #106, Rivera de la presa, C.P. 37100",
+    mapsQuery: "Presa de San José #106, Rivera de la presa, C.P. 37100",
+    telefono: "+52 477 116 6008",
     sucursal: "",             /* p. ej. "Sucursal Polanco, CDMX" */
     email: "",                /* p. ej. "hola@luminaburo.mx" */
     whatsapp: "+524771166008",
-    instagram: "https://www.instagram.com/luminaburo_/"
+    instagram: "https://www.instagram.com/lumina_buro?rpxt=MWVhMnZvd2l6dmM4eQ=="
   };
 
   (function wireContact() {
