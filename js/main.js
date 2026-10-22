@@ -64,7 +64,7 @@
     document.documentElement.style.setProperty("--led", color);
   }
   var ledImage = demo ? demo.parentElement.querySelector("[data-led-image]") : null;
-  var currentImage = "img/buro-producto-calido.webp";
+  var currentImage = "img/buro-producto-calido-v2.png";
 
   function setGlow(level) {
     STAGES.forEach(function (stage) {
@@ -136,7 +136,7 @@
     });
     dialog.querySelector("[data-lightbox-close]").addEventListener("click", closeDialog);
     dialog.addEventListener("click", function (event) { if (event.target === dialog) closeDialog(); });
-    dialog.addEventListener("close", function () { dialogImage.src = "img/buro-ambiente.png"; });
+    dialog.addEventListener("close", function () { dialogImage.src = "img/buro-producto-calido-v2.png"; });
   }
 
   /* ------------------------------------------------- datos de contacto */
